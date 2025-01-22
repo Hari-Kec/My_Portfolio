@@ -4,6 +4,7 @@ import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { useTheme } from 'styled-components';
+import HariLogo from '../../images/HariLogo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -12,11 +13,13 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to='/'>
+      <NavLogo to='/'>
           <button style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer', background: 'none', border: 'none' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+            <img src={HariLogo} alt="Logo" style={{ width: '5rem', height: '5rem', marginRight: '10px' }} />
+            <Span>Portfolio</Span>
           </button>
-        </NavLogo>
+      </NavLogo>
+
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <FaBars />
         </MobileIcon>
