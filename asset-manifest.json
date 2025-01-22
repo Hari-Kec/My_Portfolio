@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/My_Portfolio/static/css/main.bf538fe7.css",
+    "main.js": "/My_Portfolio/static/js/main.76d4b9cc.js",
+    "static/media/HeroImage.jpg": "/My_Portfolio/static/media/HeroImage.7ad7f821eee012c229d5.jpg",
+    "static/media/HariLogo.png": "/My_Portfolio/static/media/HariLogo.66a0c30bbb4bd204b1ae.png",
+    "index.html": "/My_Portfolio/index.html",
+    "main.bf538fe7.css.map": "/My_Portfolio/static/css/main.bf538fe7.css.map",
+    "main.76d4b9cc.js.map": "/My_Portfolio/static/js/main.76d4b9cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.76d4b9cc.js"
+  ]
+}
