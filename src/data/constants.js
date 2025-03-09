@@ -7,6 +7,7 @@ export const Bio = {
   description:
     "Hi I am Hari , an aspiring Full Stack AI Developer currently pursuing a B.Tech in Artificial Intelligence and Machine Learning at Kongu Engineering College. Passionate to solve real-world problems, I specialize in Full Stack Development and Machine Learning applications.",
   github: "https://github.com/Hari-Kec/",
+  googleScholar:"https://scholar.google.com/citations?user=nRSzflkAAAAJ&hl=en",
   resume:
     "https://drive.google.com/file/d/1A1HLs-a385LoHut1_m2K1Y6mFUpMO2I5/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/h-a-r-i/",

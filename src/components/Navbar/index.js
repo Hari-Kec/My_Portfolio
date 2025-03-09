@@ -33,6 +33,9 @@ const Navbar = () => {
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
+        <ButtonContainer>
+          <GitHubButton href={Bio.googleScholar} target="_blank">Google Scholar</GitHubButton>
+        </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink href="#about" onClick={() => setIsOpen(false)}>About</MobileLink>
