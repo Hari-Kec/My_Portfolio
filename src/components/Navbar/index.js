@@ -4,7 +4,7 @@ import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, B
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { useTheme } from 'styled-components';
-import HariLogo from '../../images/HariLogo.png';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -13,11 +13,8 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-      <NavLogo to='/'>
-          <button style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer', background: 'none', border: 'none' }}>
-            <img src={HariLogo} alt="Logo" style={{ width: '5rem', height: '5rem', marginRight: '10px' }} />
-            <Span>Portfolio</Span>
-          </button>
+      <NavLogo> 
+            <Span>PORTFOLIO</Span>
       </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
