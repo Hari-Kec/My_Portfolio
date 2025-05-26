@@ -54,11 +54,13 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
+  align-items: flex-start;
 `
 
 const Skill = styled.div`
-  width: 100%;
-  max-width: 500px;
+  width: auto;
+  min-width: 280px;
+  
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #854CE6;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent';
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink,KaggleButton ,GoogleButton} from './NavbarStyledComponent';
 
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
@@ -28,11 +28,11 @@ const Navbar = () => {
           <NavLink href="#education">Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-        </ButtonContainer>
-        <ButtonContainer>
-          <GitHubButton href={Bio.googleScholar} target="_blank">Google Scholar</GitHubButton>
-        </ButtonContainer>
+  <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+  <GoogleButton href={Bio.googleScholar} target="_blank">Google Scholar</GoogleButton>
+  <KaggleButton href={Bio.kaggle} target="_blank">Kaggle</KaggleButton>
+</ButtonContainer>
+
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink href="#about" onClick={() => setIsOpen(false)}>About</MobileLink>
