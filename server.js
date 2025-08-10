@@ -6,23 +6,31 @@ const { Mistral } = require("@mistralai/mistralai");
 dotenv.config();
 
 const app = express();
+
+// CORS setup (put at the top)
 app.use(cors({
   origin: [
     "http://localhost:3000",
     "https://the-hari-s-portfolio.netlify.app"
   ],
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
+
+app.options("*", cors()); // handle preflight requests
+
 app.use(express.json());
 
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 
-// your portfolioData remains the same...
+// portfolioData stays the same...
 
 app.post("/chat", async (req, res) => {
   const { message } = req.body;
-  if (!message) return res.status(400).json({ reply: "No message provided" });
+
+  if (!message) {
+    return res.status(400).json({ reply: "No message provided" });
+  }
 
   try {
     const response = await client.chat.complete({
@@ -49,11 +57,13 @@ User question: ${message}
     let reply = response.choices[0]?.message?.content || "No answer found.";
     reply = reply.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]*)`/g, '$1');
     res.json({ reply });
+
   } catch (error) {
     console.error("Mistral API Error:", error);
     res.status(500).json({ reply: "Error connecting to AI API." });
   }
 });
 
+// IMPORTANT: use Render's dynamic port
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
