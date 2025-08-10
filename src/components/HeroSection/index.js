@@ -14,7 +14,7 @@ import { Bio } from '../../data/constants';
 const HeroSection = () => {
     const [chatOpen, setChatOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { sender: "bot", text: "Hi! I'm your portfolio assistant. Ask me anything about my work!" }
+        { sender: "bot", text: "Hi! I'm your Hari's Assistant. Ask me anything about him!" }
     ]);
     const [input, setInput] = useState("");
 
