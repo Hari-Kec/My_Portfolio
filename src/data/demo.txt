@@ -1,0 +1,66 @@
+Bio
+Name: Hari
+Role: AI Developer
+Education: B.Tech in AI & ML, Kongu Engineering College (2022-present, 8.14 CGPA)
+
+
+Links:
+GitHub: https://github.com/Hari-Kec
+LinkedIn: https://linkedin.com/in/h-a-r-i
+resume: https://drive.google.com/file/d/1kkPXVIm-WrqQYtKSwYPqElLXoaC3bqA2/view?usp=sharing
+
+Experience
+1.AI Developer @ Mawad Online (Jan 2025 - Feb 2025)
+
+Built RAG chatbot for customer queries using Langchain.
+
+Skills: Python, LangChain, OpenAI, Vector DBs.
+
+2.Full Stack AI Dev @ Punchbiz (Jul 2024 - Dec 2024)
+
+Built an Enterprise billing software with Full Stack Tech and AI.
+
+3. Full Stack Developer @ Centillion Labs (Feb 2024 - Apr 2024)
+Dveloped Aristotle AI private chatbot in a team using React, Vertex AI, and Bedrock.
+
+
+
+Skills - 
+1.ML & DL: TensorFlow, Pytorch, Keras, OpenCV, YOLO, NLTK, Hugging Face, FastAPI, Streamlit, RAG Pipelines,
+Langchain, Langgraph, Bedrock, Vertex AI, MCP, MLOps, Prompt Engineering, OpenAI, Gemini
+2.Programming & Web: Java, C, Python, React.js, JavaScript, Tailwind CSS, Node.js, Express JS, RESTful APIs, React
+Native
+3.Databases & Cloud: MongoDB, PostgreSQL, SQL, AWS, GCP, Firebase, Docker, Git
+4.Tools: GitHub, Figma, Power BI, Tableau, Jupyter Notebook, Google Colab
+
+
+Projects
+1.FaceSwap AI - Image/video face-swapping app.
+
+2.MCP Chatbot - Multi-service AI chatbot.
+
+3.CareerBuildAI - AI job search assistant.
+
+4.LangGraph News Chatbot - Real-time news search.
+
+5.Vehicle Tracking System - Live bus tracking app.
+
+6.Text-to-SQL LLM - Gemini-powered SQL generator.
+
+7. Yoga Pose Detection and Correction
+
+8. Chatbot for Resume analysis
+
+9.Task Assignment platform for manager and employees.
+
+10. Book Recommendation webapp
+
+11. Face Attendance system and Hostel management system
+
+12.Ingredient Healthy checker and analyzer.
+
+13.Craters and Boulders detection and Enhancement of Permanently shadowed images.
+
+14. Movie Ticket Booking System
+
+

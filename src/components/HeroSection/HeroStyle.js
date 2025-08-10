@@ -201,3 +201,143 @@ export const ResumeButton = styled.a`
     } 
 
 `;
+export const ChatButton = styled.button`
+    width: 95%;
+    max-width: 300px;
+    text-align: center;
+    padding: 16px 0;
+    color: ${({ theme }) => theme.white};
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: hsla(271, 100%, 50%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    box-shadow: 20px 20px 60px #1F2634,
+                -20px -20px 60px #1F2634;
+    border: none;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+        box-shadow: 20px 20px 60px #1F2634;
+        filter: brightness(1);
+    }
+
+    @media (max-width: 640px) {
+        padding: 12px 0;
+        font-size: 18px;
+    }
+`;
+
+
+export const ChatPopup = styled.div`
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 340px;
+    height: 450px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999; /* Ensure it's always on top */
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        right: 5%;
+        bottom: 10px;
+        height: 60vh;
+    }
+`;
+export const ButtonRow = styled.div`
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @media (max-width: 640px) {
+        justify-content: center;
+    }
+`;
+
+
+
+export const ChatHeader = styled.div`
+    background: ${({ theme }) => theme.primary};
+    color: white;
+    padding: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+export const CloseButton = styled.button`
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    &:hover {
+        color: #ffcccc;
+    }
+`;
+
+
+export const ChatBody = styled.div`
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    background: #f8f8f8;
+`;
+
+
+export const ChatMessage = styled.div`
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+    span {
+        background: ${({ sender }) => sender === "bot" ? "#e6e6e6" : "#6c63ff"};
+        color: ${({ sender }) => sender === "bot" ? "#000" : "#fff"};
+        padding: 8px 12px;
+        border-radius: 12px;
+        max-width: 75%;
+        font-size: 14px;
+        word-break: break-word;
+    }
+`;
+
+export const ChatInputWrapper = styled.div`
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: white;
+    flex-shrink: 0;
+    & button {
+        background: ${({ theme }) => theme.primary};
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        margin-left: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+`;
+
+export const ChatInput = styled.input`
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+`;
