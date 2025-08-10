@@ -8,7 +8,7 @@ console.log("Loaded API Key:", process.env.MISTRAL_API_KEY ? "✅ Found" : "❌ 
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: ["http://localhost:3000","https://the-hari-s-portfolio.netlify.app/"],
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
